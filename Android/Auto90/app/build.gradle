@@ -35,11 +35,13 @@ dependencies {
     compile 'com.squareup.okhttp:okhttp:2.4.0'
 
     // Firebase
+    /*
     compile 'com.google.firebase:firebase-auth:9.6.1'
     compile 'com.google.firebase:firebase-database:9.6.1'
     compile 'com.google.firebase:firebase-messaging:9.6.1'
     compile 'com.google.firebase:firebase-storage:9.6.1'
     compile 'com.firebaseui:firebase-ui-storage:0.6.0'
+    */
 
     // Facebook SDK
     compile 'com.facebook.android:facebook-android-sdk:[4,5)'

@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Auto 90</string>
+
+
+
+    <string name="drawer_open"></string>
+    <string name="drawer_close"></string>
+
+
+    <string name="facebook_app_id">385369898507291</string>
+    <string name="fb_login_protocol_scheme">fb385369898507291</string>
 </resources>
