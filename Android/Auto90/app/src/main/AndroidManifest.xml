@@ -2,6 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.be4em.auto90">
 
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+    <permission
+        android:name="com.exxonmobil.mobapp.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.be4em.auto90.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +18,13 @@
         android:name=".helper.AppController"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
         <activity android:name=".activity.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,9 +33,18 @@
             </intent-filter>
         </activity>
 
+
+        <activity android:name=".activity.Register"
+            android:label="Register"/>
+
         <activity android:name=".activity.Home"
             android:label="Home"/>
 
+        <activity android:name=".activity.RideNew"
+            android:label="New Ride"/>
+
+        <activity android:name=".activity.RideChat"
+            android:label="Ride Chat"/>
 
         <meta-data android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id"/>
@@ -39,6 +64,8 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
+
+
 
     </application>
 

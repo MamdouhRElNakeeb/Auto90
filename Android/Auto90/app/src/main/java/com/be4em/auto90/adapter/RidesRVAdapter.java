@@ -1,6 +1,7 @@
 package com.be4em.auto90.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.be4em.auto90.R;
+import com.be4em.auto90.activity.RideChat;
 import com.be4em.auto90.object.RideItem;
 
 import java.util.ArrayList;
@@ -36,6 +38,12 @@ public class RidesRVAdapter extends RecyclerView.Adapter<RidesRVAdapter.ViewHold
     public void onBindViewHolder(ViewHolder holder, int position) {
 //        RideItem rideItem = rideItemArrayList.get(position);
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                context.startActivity(new Intent(context, RideChat.class));
+            }
+        });
     }
 
     @Override

@@ -19,21 +19,65 @@
         android:layout_marginRight="40dp"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/auto90_wlogo"
-            android:adjustViewBounds="true"
-            android:layout_marginBottom="30dp"/>
+        <android.support.v7.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/ppCV"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="75dp">
+
+            <ImageButton
+                android:id="@+id/userImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="3dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_account_circle_48px" />
+
+        </android.support.v7.widget.CardView>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal">
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:src="@drawable/ic_person_black_24dp"
+                android:tint="@color/colorPrimary"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextInputCustom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/nameET"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorPrimary"
+                    android:hint="Name"/>
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/message"
                 android:tint="@color/colorPrimary"/>
 
             <android.support.design.widget.TextInputLayout
@@ -61,8 +105,38 @@
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/phonemob"
+                android:tint="@color/colorPrimary"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextInputCustom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/mobileET"
+                    android:inputType="number"
+                    android:textColor="@color/colorPrimary"
+                    android:hint="Mobile Number"/>
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:src="@drawable/pswd"
                 android:tint="@color/colorPrimary"/>
 
@@ -88,7 +162,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/loginBtn"
-            android:text="Login"
+            android:text="Register"
             android:layout_marginTop="20dp"
             android:textSize="18sp"
             android:textColor="@color/colorPrimary"
@@ -98,50 +172,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0.1dp"
-                android:background="@color/white"
-                android:layout_weight="1"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="or login using"
-                android:gravity="center"
-                android:textColor="@color/white"/>
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0.1dp"
-                android:background="@color/white"
-                android:layout_weight="1"/>
-        </LinearLayout>
-
-        <com.facebook.login.widget.LoginButton
-            android:id="@+id/fbLoginBtn"
-            android:gravity="center"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="4dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <com.google.android.gms.common.SignInButton
-            android:id="@+id/gLoginBtn"
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="visible" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/linkToRegister"
+            android:id="@+id/linkToLogin"
             android:layout_marginTop="20dp"
             android:gravity="center">
 
@@ -150,14 +181,16 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textColor="#d9e5f3"
-                android:text="Have not an account?"/>
+                android:text="Have an account already?"/>
+            
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textColor="#d9e5f3"
                 android:textStyle="bold"
-                android:text=" REGISTER "/>
+                android:text=" LOGIN "/>
+            
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -166,34 +199,10 @@
                 android:text="now!"/>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/linkToReset"
-            android:layout_marginTop="10dp"
-            android:gravity="center">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textColor="#d9e5f3"
-                android:text="Forgot your password?"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textColor="#d9e5f3"
-                android:textStyle="bold"
-                android:text=" RESET "/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textColor="#d9e5f3"
-                android:text="now!"/>
-        </LinearLayout>
     </LinearLayout>
+
+
+
 
 
 </RelativeLayout>

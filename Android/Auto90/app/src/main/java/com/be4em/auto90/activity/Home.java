@@ -45,6 +45,8 @@ public class Home extends AppCompatActivity {
 
         initDrawer();
 
+        rideAddFAB = (FloatingActionButton) findViewById(R.id.ride_addFAB);
+
         ridesRV = (RecyclerView) findViewById(R.id.ridesRV);
 
         ridesRV.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
@@ -54,6 +56,14 @@ public class Home extends AppCompatActivity {
         ridesRVAdapter = new RidesRVAdapter(this, rideItemArrayList);
 
         syncRides();
+
+
+        rideAddFAB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getBaseContext(), RideNew.class));
+            }
+        });
     }
 
     void syncRides(){
@@ -122,7 +132,7 @@ public class Home extends AppCompatActivity {
 
                     case R.id.nav_add_event:
                         mDrawerLayout.closeDrawer(Gravity.LEFT);
-                        //startActivity(new Intent(getBaseContext(), AddExperience.class));
+                        startActivity(new Intent(getBaseContext(), RideNew.class));
                         navigationView.getMenu().getItem(2).setChecked(true);
                         return true;
 
