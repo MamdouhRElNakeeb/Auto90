@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "103908476964",
+    "firebase_url": "https://auto90-166615.firebaseio.com",
+    "project_id": "auto90-166615",
+    "storage_bucket": "auto90-166615.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103908476964:android:37f8cc18743fe8ed",
+        "android_client_info": {
+          "package_name": "com.be4em.auto90"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "103908476964-jp0363kfq6jejss2q8v5eq58rst6dfot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7_YeTgHTKM4xGsAHb5pjwS7A-iGOfdao"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

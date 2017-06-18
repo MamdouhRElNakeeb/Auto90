@@ -19,4 +19,9 @@
 
     </style>
 
+    <style name="FABCustom" parent="Widget.Design.FloatingActionButton">
+        <item name="android:color">@color/colorPrimary</item>
+        <item name="android:colorButtonNormal">@color/colorPrimary</item>
+    </style>
+
 </resources>

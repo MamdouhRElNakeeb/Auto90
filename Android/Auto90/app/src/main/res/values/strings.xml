@@ -6,9 +6,8 @@
     <string name="drawer_open"></string>
     <string name="drawer_close"></string>
 
-
-    <string name="facebook_app_id">385369898507291</string>
-    <string name="fb_login_protocol_scheme">fb385369898507291</string>
+    <string name="facebook_app_id">395507177510004</string>
+    <string name="fb_login_protocol_scheme">fb395507177510004</string>
 
     <!--    Permissions    -->
     <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
