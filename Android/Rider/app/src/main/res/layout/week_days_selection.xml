@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="270dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Select Ride Days"
+        android:textSize="18sp"
+        android:padding="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/satCV"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/satTV"
+                android:text="Sat"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/sunCV"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/sunTV"
+                android:text="Sun"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/monCV"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/monTV"
+                android:text="Mon"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/tueCV"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tueTV"
+                android:text="Tue"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"/>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/wedCV"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wedTV"
+                android:text="Wed"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/thursCV"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/thursTV"
+                android:text="Thurs"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/friCV"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/friTV"
+                android:text="Fri"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"/>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectedDaysTV"
+        android:layout_marginLeft="16dp"
+        android:visibility="gone"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Selected Days:"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Decline"
+            android:background="@android:color/transparent"
+            android:textColor="@color/red"
+            android:id="@+id/declineBtn"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Confirm"
+            android:background="@android:color/transparent"
+            android:textColor="@color/green"
+            android:id="@+id/confirmBtn"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp">
+
+    <ImageView
+        android:id="@+id/fare_status"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/dot_red"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/fare_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/fare_status"
+        android:layout_toEndOf="@id/fare_status"
+        android:ellipsize="end"
+        android:text="500 L.E"
+        android:textColor="@color/black"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/fare_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:text="June, 1, 1995"
+        android:maxLines="1"
+        android:textColor="@color/dark_grey"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/fare_status"
+        android:layout_toEndOf="@id/fare_status"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/fare_value"
+        android:layout_alignStart="@id/fare_value"
+        android:layout_alignLeft="@+id/fare_value"/>
+
+    <View
+        android:id="@+id/saved_event_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:layout_marginRight="128dp"
+        android:background="@android:color/darker_gray"/>
+</RelativeLayout>

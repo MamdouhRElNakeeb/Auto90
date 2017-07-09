@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.Home">
+    <item android:id="@+id/rideInfo"
+        android:title="Info"
+        android:orderInCategory="10"
+        app:showAsAction="always"/>
+
+</menu>
